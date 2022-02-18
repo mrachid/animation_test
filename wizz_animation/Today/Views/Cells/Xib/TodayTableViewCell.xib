@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayTableViewCell" rowHeight="501" id="KGk-i7-Jjw" customClass="TodayTableViewCell" customModule="wizz_animation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BIG-fd-onu">
+                        <rect key="frame" x="10" y="10" width="300" height="480"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="480" id="Y4e-UH-VMR"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ic-Jb-GVI">
+                        <rect key="frame" x="33" y="407" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="ph9-hp-eXp"/>
+                            <constraint firstAttribute="height" constant="60" id="zA7-mH-caW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEAUTIFUL ISLAND RESSORT AT LACCADIVE SEA IN THE MALDIVES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akx-2E-4Md">
+                        <rect key="frame" x="20" y="20" width="280" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="1dy-0j-GqV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2te-Oh-Puk">
+                        <rect key="frame" x="108" y="431" width="179" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MugiwaraRash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT9-Vo-7ZP">
+                                <rect key="frame" x="0.0" y="0.0" width="102" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbv-tK-mDR">
+                                <rect key="frame" x="0.0" y="17" width="61.5" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BIG-fd-onu" secondAttribute="trailing" constant="10" id="72A-Ly-bO0"/>
+                    <constraint firstAttribute="bottom" secondItem="BIG-fd-onu" secondAttribute="bottom" constant="10" id="7BR-Cj-snS"/>
+                    <constraint firstItem="3ic-Jb-GVI" firstAttribute="leading" secondItem="BIG-fd-onu" secondAttribute="leadingMargin" constant="15" id="8Ej-Q4-des"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FYy-x4-wx3"/>
+                    <constraint firstItem="akx-2E-4Md" firstAttribute="leading" secondItem="BIG-fd-onu" secondAttribute="leading" constant="10" id="OZt-7P-S5z"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="bottomMargin" secondItem="3ic-Jb-GVI" secondAttribute="bottom" constant="15" id="Z6y-OR-uCq"/>
+                    <constraint firstItem="2te-Oh-Puk" firstAttribute="leading" secondItem="3ic-Jb-GVI" secondAttribute="trailing" constant="15" id="d0W-L9-qco"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="trailingMargin" secondItem="2te-Oh-Puk" secondAttribute="trailing" constant="15" id="lcz-Lk-oRq"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="bottomMargin" secondItem="2te-Oh-Puk" secondAttribute="bottom" constant="17" id="pbz-By-UTJ"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="trailing" secondItem="akx-2E-4Md" secondAttribute="trailing" constant="10" id="pvH-Pz-xKH"/>
+                    <constraint firstItem="BIG-fd-onu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vk1-p4-bxf"/>
+                    <constraint firstItem="akx-2E-4Md" firstAttribute="top" secondItem="BIG-fd-onu" secondAttribute="top" constant="10" id="wSS-b9-zVw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="MT9-Vo-7ZP" id="0Fh-5i-4o5"/>
+                <outlet property="likeLabel" destination="Bbv-tK-mDR" id="E2N-F9-9ql"/>
+                <outlet property="principalImage" destination="BIG-fd-onu" id="9rS-On-UKH"/>
+                <outlet property="topLabel" destination="akx-2E-4Md" id="rBa-gE-Rw6"/>
+                <outlet property="userImage" destination="3ic-Jb-GVI" id="hat-MM-I9E"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="135.9375"/>
+        </tableViewCell>
+    </objects>
+</document>

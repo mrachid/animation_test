@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today Detail View Controller-->
+        <scene sceneID="N2S-wu-lw9">
+            <objects>
+                <viewController storyboardIdentifier="TodayDetailViewController" id="Dhy-eu-gJK" customClass="TodayDetailViewController" customModule="wizz_animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W4l-AR-tac">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pMf-3x-xE1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Yz-cm-FX1">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sT5-bh-BYL">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nn9-Jf-jMU">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYd-wg-23D">
+                                <rect key="frame" x="359" y="59" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="q83-Sd-bQI"/>
+                                    <constraint firstAttribute="height" constant="40" id="xyG-9L-Yu7"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeTodayDetail:" destination="Dhy-eu-gJK" eventType="touchUpInside" id="i8p-Rl-10u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x9Y-bd-o5u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pMf-3x-xE1" firstAttribute="trailing" secondItem="x9Y-bd-o5u" secondAttribute="trailing" id="1bQ-Sb-Sy8"/>
+                            <constraint firstItem="x9Y-bd-o5u" firstAttribute="trailing" secondItem="QYd-wg-23D" secondAttribute="trailing" constant="15" id="9du-FG-KGl"/>
+                            <constraint firstItem="pMf-3x-xE1" firstAttribute="bottom" secondItem="x9Y-bd-o5u" secondAttribute="bottom" id="B9J-VT-uLf"/>
+                            <constraint firstItem="pMf-3x-xE1" firstAttribute="leading" secondItem="x9Y-bd-o5u" secondAttribute="leading" id="ZuZ-27-8dA"/>
+                            <constraint firstItem="pMf-3x-xE1" firstAttribute="top" secondItem="x9Y-bd-o5u" secondAttribute="top" id="fGt-4F-rok"/>
+                            <constraint firstItem="QYd-wg-23D" firstAttribute="top" secondItem="x9Y-bd-o5u" secondAttribute="top" constant="15" id="sGD-Mb-L4w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="QYd-wg-23D" id="rmK-fz-wU0"/>
+                        <outlet property="collectionView" destination="pMf-3x-xE1" id="lqk-6r-GZw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkO-Fs-XsK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469.56521739130437" y="-68.303571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
